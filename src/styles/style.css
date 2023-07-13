@@ -1,0 +1,186 @@
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Regular.ttf') format('truetype')
+  /* Add additional font formats if needed */
+  /* Adjust the font file paths as per your project structure */
+}
+body {
+    background-color: rgba(39, 39, 39, 1);
+    padding-left: 15%;
+  padding-right: 15%;
+  background-image: url("../assets/rectangle.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: auto; /* Default size for larger screens */
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-size: 35%; /* Adjusted size for smaller screens */
+  }
+}
+
+.navbar {
+    background: transparent;
+    height: 5em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+  
+  .navbar ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar ul:first-child {
+    justify-content: flex-start;
+  }
+  
+  .navbar ul:last-child {
+    justify-content: flex-end;
+  }
+  
+  .logoImg {
+    width: 6.25em;
+    height: 3.75em;
+  }
+  
+  .navbar ul li {
+    list-style: none;
+    color: gray;
+    display: flex;
+    color: white;
+    justify-content: center;
+    padding: 1.25em;
+  }
+  
+  .navbar .button {
+    background-color: black;
+    border: 1px solid gray;
+    border-radius: 1.875em;
+    color: aliceblue;
+    font-weight: 700;
+    width: 8.625em;
+    height: 2.9375em;
+    justify-content: center;
+    text-align: center;
+  }
+
+/* home section */
+  .body-section {
+    background-color: rgba(95, 128, 160, 1);
+    border-radius: 1.25em ;
+    height: 53.125em;
+    margin-top: 3.125em;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .grid1,
+  .grid2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    align-items: center;
+    height: 100%;
+    position: relative;
+  }
+  
+  .grid1{
+    justify-content: center;
+  }
+  
+
+  
+   /* .grid1 button {
+    margin: 5px 0;
+    margin: 5px 0;
+  } */
+  .grid1 .hireMeBtn button{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    width: 8em;
+    font-weight: 500;
+    font-size: 1.5em;
+    height: 2.5em;
+  }
+  
+  .grid1 p,ul{
+    position: relative;
+    padding: 0.2em;
+    color: white;
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.5em;
+  }
+  .grid1 .myName{
+    font-size: 6em;
+    font-size: 6em;
+    position: relative;
+    z-index: 1;
+    padding: 0;  
+  }
+  
+  .grid2 img {
+    width: 100%;
+    height: 80%;
+  }
+  .grid1 ul{
+    list-style: none;
+    display: flex;
+
+    align-items: center;
+    padding: 0;
+  }
+  
+  .grid1 ul li{
+    height: 1.5625em;
+    margin: 0.625em;
+    width: 1.5625;
+  }
+  .grid1 ul li img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .description {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    bottom: 0;
+    left: 0;
+    border-radius:0 0 20px 0  ;
+    background-color: rgba(139, 142, 157, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .description p {
+    color: white;
+    text-align: center;
+    
+  }
+  
+  .description button {
+    margin-top: 0.5em;
+    margin-top: 0.2em;
+    background-color: rgba(95, 128, 160, 1);
+    border: none;
+    border-radius: 0.8em;
+    padding: 0.5em;
+    color: white;
+  }
+  
+
